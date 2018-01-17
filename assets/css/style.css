@@ -65,10 +65,10 @@ h3 {
 
 #logo {
   float: left;
-  width: 250px;
+  width: 500px;
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   line-height: 90px;
   color: #fff;
@@ -161,7 +161,7 @@ h3,
 .work {
   position: relative;
   float: left;
-  width: 274px;
+  /* width: 274px; */
   margin: 20px 0 25px;
   overflow: auto;
 }
@@ -176,7 +176,22 @@ h3,
   opacity: 0.8;
 }
 
-.work h3 {
+
+.work h6 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 10px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+/* .work h3 {
   position: absolute;
   bottom: 20px;
   width: 100%;
@@ -188,7 +203,7 @@ h3,
   text-align: center;
   background: #4aaaa5;
   border-bottom: 0;
-}
+} */
 
 .auth-image {
   float: left;
