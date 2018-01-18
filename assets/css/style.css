@@ -130,14 +130,34 @@ h3,
 }
 
 .social {
-  width: 62px;
-  height: 62px;
+  width: 43px;
+  height: 43px;
   margin-top: 8px;
   margin-right: 5px;
 }
 
-.social:last-child {
+/* .social:last-child {
   margin-right: 0;
+} */
+
+.faUl {
+  display: flex;
+}
+
+.fa-linkedin-square{
+  color:#0077B5;
+}
+
+.fa-facebook-square{
+  color:#3b5998;
+}
+
+.fa-twitter-square{
+  color:#00aced;
+}
+
+.fa-github-square{
+  color:#6e5494;
 }
 
 /* main */
@@ -162,7 +182,7 @@ h3,
   position: relative;
   float: left;
   /* width: 274px; */
-  margin: 25px 0 20px;
+  margin: 25px 15px 20px;
   overflow: auto;
 }
 
@@ -174,19 +194,20 @@ h3,
   /* width: 100%; */
   width:240px;
   height:180px;
-  padding:45px;
+  padding:0px;
   border: 0 none;
   opacity: 0.8;
 }
 
 .work h6 {
+  font-size: 20px;
   position: absolute;
-  bottom: 10px;
+  bottom: 25px;
   width: 100%;
-  padding: 15px;
+  padding: 5px 0 5px 0;
   margin-bottom: 0;
   font-weight: 300;
-  line-height: 10px;
+  line-height: 15px;
   color: #fff;
   text-align: center;
   background: #4aaaa5;
@@ -270,6 +291,12 @@ Protip: Use the Chrome extensions Window Resizer and Browser Width to see the br
 @media all and (max-width:768px) {
     .container{width: 75%;
             max-width: 768px;}
+    #masthead {
+          width: 75%;}
+    #logo {
+          width: 400px;
+          height: 60px;
+          font-size: 20px;}
     body {font-size: 14px;}
     h1 {padding-bottom: 20px;
       font-size: 26px;
@@ -280,7 +307,12 @@ Protip: Use the Chrome extensions Window Resizer and Browser Width to see the br
     .container{width: 50%;
           max-width: 768px;}
     #masthead {
+                width:50%;
             position: static;}
+    #logo {
+          width: 300px;
+          height: 45px;
+          font-size: 16px;}
     body {font-size: 10px;}
     h1 {padding-bottom: 13px;
       font-size: 22px;
