@@ -65,10 +65,10 @@ h3 {
 
 #logo {
   float: left;
-  width: 500px;
+  width: 525px;
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 90px;
   color: #fff;
@@ -239,4 +239,50 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+
+
+/*
+Make the position of the header static (the default positioning) when the screen is 640px wide. The header design takes up a lot of room;
+you don't want it to stick to the top of a small screen and leave no room for the rest of your site.
+
+Be sure to include the viewport tag in all your HTML files, otherwise your media-queries won't function as expected on mobile devices.
+(Hint: You won't need to use exact pixels for anything other than the container)
+
+Protip: Use the Chrome extensions Window Resizer and Browser Width to see the browser dimensions in Chrome.
+
+*/
+
+
+/* .container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+} */
+
+@media all and (max-width: 980px) {
+    .container{width: 100%;
+              max-width: 960px;}
+}
+
+@media all and (max-width:768px) {
+    .container{width: 75%;
+            max-width: 768px;}
+    body {font-size: 14px;}
+    h1 {padding-bottom: 20px;
+      font-size: 26px;
+      line-height: 35px;}
+}
+
+@media all and (max-width:640px) {
+    .container{width: 50%;
+          max-width: 768px;}
+    #masthead {
+            position: static;}
+    body {font-size: 10px;}
+    h1 {padding-bottom: 13px;
+      font-size: 22px;
+      line-height: 30px;}
 }
